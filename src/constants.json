@@ -1,0 +1,30 @@
+{
+   "color": {
+      "green": "#138D75",
+      "green1": "#A2D9CE",
+      "red": "#A6ACAF",
+      "white": "#FFFFFF"
+   },
+   "space": [
+      "0",
+      "4px",
+      "8px",
+      "12px",
+      "16px",
+      "24px",
+      "32px",
+      "40px",
+      "48px",
+      "64px",
+      "80px",
+      "96px",
+      "112px",
+      "128px"
+   ],
+   "borderRadius": {
+    "sm": "2px",
+    "md": "4px",
+    "lg": "8px",
+    "pill": "999px"
+  }
+}
