@@ -1,26 +1,40 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import ReactDOM from "react-dom";
+import logo from "./logo.svg";
+import TitleScreen from "./TitleScreen";
+import {StylesProvider} from "@material-ui/styles";
+import {ThemeProvider, createMuiTheme} from "@material-ui/core/styles";
+import {color} from "./constants";
+import Div100vh from "react-div-100vh";
+import "typeface-rubik";
+
+const theme = createMuiTheme({
+   typography: {
+      fontFamily: "Rubik",
+   },
+   palette: {
+      primary: {
+         main: color.green,
+         light: color.green1,
+      },
+      secondary: {
+         main: color.red,
+      },
+   },
+});
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+   return (
+      <ThemeProvider theme={theme}>
+         <StylesProvider injectFirst>
+            <Div100vh>
+               <TitleScreen />
+            </Div100vh>
+         </StylesProvider>
+      </ThemeProvider>
+   );
 }
+
+ReactDOM.render(<App />, document.getElementById("root"));
 
 export default App;
