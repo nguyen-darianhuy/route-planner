@@ -31,19 +31,17 @@ const Header = styled.div`
    justify-content: center;
    align-items: center;
    padding: 24px 0;
+   img {
+      top: -3px;
+      left: -64px;
+      width: 128px;
+   }
 `;
 
 const Logo = styled.div`
-   position: relative;
    display: flex;
    flex-flow: row nowrap;
    justify-content: center;
-   img {
-      position: absolute;
-      top: -3px;
-      left: -64px;
-      width: 64px;
-   }
 `;
 
 const Form = styled.form`
@@ -62,7 +60,7 @@ const Stop = styled.div`
    position: relative;
    ${RemoveIconButton} {
       position: absolute;
-      top: 12px;
+      top: 22px;
       right: -36px;
    }
 `;
@@ -83,6 +81,7 @@ const DoneButton = styled(Button)`
    background: ${color.green};
    color: white;
    margin: 24px 0;
+   height: 48px;
 
    &:hover {
       background: ${color.green1};
@@ -113,8 +112,8 @@ function TitleScreen({next}) {
    return (
       <Page>
          <Header>
+            <img src={logo} alt="logo" />
             <Logo>
-               <img src={logo} alt="logo" />
                <Typography variant="h2" color="primary">
                   RUTA
                </Typography>
@@ -125,7 +124,7 @@ function TitleScreen({next}) {
          </Header>
          <Form>
             <Typography variant="h6" color="primary">
-               Where do you want to go today?
+               Where do you plan to go?
             </Typography>
             <AddressField label="From" required color="secondary" />
             {stops.map(stop => (
@@ -152,7 +151,7 @@ function TitleScreen({next}) {
                Depart at?
             </Typography>
             <AddressField
-               label="Departtime"
+               label="Time"
                type="datetime-local"
                // defaultValue="2017-05-24T10:30"
                defaultValue={moment()
@@ -162,7 +161,7 @@ function TitleScreen({next}) {
                   shrink: true,
                }}
             />
-            <DoneButton onClick={next}>What's my fastest route!</DoneButton>
+            <DoneButton onClick={next}>Show my fastest route!</DoneButton>
          </Form>
       </Page>
    );

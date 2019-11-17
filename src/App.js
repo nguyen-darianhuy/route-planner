@@ -7,6 +7,7 @@ import {color} from "./constants";
 import Div100vh from "react-div-100vh";
 import "typeface-rubik";
 import TitleScreen from "./TitleScreen";
+import MapScreen from "./MapScreen";
 import withTransition from "./withTransition";
 
 import {PoseGroup} from "react-pose";
@@ -27,7 +28,7 @@ const theme = createMuiTheme({
 });
 
 const PosedTitleScreen = withTransition(TitleScreen);
-const PosedMapScreen = styled.div``;
+const PosedMapScreen = withTransition(MapScreen);
 
 function App() {
    const [screen, setScreen] = React.useState(0);
