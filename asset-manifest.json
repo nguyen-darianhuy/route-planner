@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/ruta/static/css/main.34de6062.chunk.css",
+    "main.js": "/ruta/static/js/main.77e0d18e.chunk.js",
+    "main.js.map": "/ruta/static/js/main.77e0d18e.chunk.js.map",
+    "runtime-main.js": "/ruta/static/js/runtime-main.7b1b345c.js",
+    "runtime-main.js.map": "/ruta/static/js/runtime-main.7b1b345c.js.map",
+    "static/css/2.00261875.chunk.css": "/ruta/static/css/2.00261875.chunk.css",
+    "static/js/2.26e6d032.chunk.js": "/ruta/static/js/2.26e6d032.chunk.js",
+    "static/js/2.26e6d032.chunk.js.map": "/ruta/static/js/2.26e6d032.chunk.js.map",
+    "index.html": "/ruta/index.html",
+    "precache-manifest.0d44234f93855256309a98527799f7eb.js": "/ruta/precache-manifest.0d44234f93855256309a98527799f7eb.js",
+    "service-worker.js": "/ruta/service-worker.js",
+    "static/css/2.00261875.chunk.css.map": "/ruta/static/css/2.00261875.chunk.css.map",
+    "static/css/main.34de6062.chunk.css.map": "/ruta/static/css/main.34de6062.chunk.css.map",
+    "static/media/RUTA.png": "/ruta/static/media/RUTA.291a401a.png",
+    "static/media/index.css": "/ruta/static/media/rubik-latin-900italic.5b173e43.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7b1b345c.js",
+    "static/css/2.00261875.chunk.css",
+    "static/js/2.26e6d032.chunk.js",
+    "static/css/main.34de6062.chunk.css",
+    "static/js/main.77e0d18e.chunk.js"
+  ]
+}
