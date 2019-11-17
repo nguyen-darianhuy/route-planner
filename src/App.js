@@ -1,12 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import logo from "./logo.svg";
-import TitleScreen from "./TitleScreen";
+import styled from "styled-components";
 import {StylesProvider} from "@material-ui/styles";
 import {ThemeProvider, createMuiTheme} from "@material-ui/core/styles";
 import {color} from "./constants";
 import Div100vh from "react-div-100vh";
 import "typeface-rubik";
+import TitleScreen from "./TitleScreen";
+import withTransition from "./withTransition";
+
+import {PoseGroup} from "react-pose";
 
 const theme = createMuiTheme({
    typography: {
@@ -23,12 +26,27 @@ const theme = createMuiTheme({
    },
 });
 
+const PosedTitleScreen = withTransition(TitleScreen);
+const PosedMapScreen = styled.div``;
+
 function App() {
+   const [screen, setScreen] = React.useState(0);
+   const nextScreen = () => {
+      setScreen(screen + 1);
+   };
+
+   const screens = [
+      <PosedTitleScreen key={0} next={nextScreen} />,
+      <PosedMapScreen key={1} />,
+   ];
+   console.log(screen);
    return (
       <ThemeProvider theme={theme}>
          <StylesProvider injectFirst>
             <Div100vh>
-               <TitleScreen />
+               <PoseGroup preEnterPose="from" moveLeft>
+                  {screens[screen]}
+               </PoseGroup>
             </Div100vh>
          </StylesProvider>
       </ThemeProvider>

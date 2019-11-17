@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "./logo.svg";
+import logo from "./RUTA.png";
 import styled from "styled-components";
 import moment from "moment";
 
@@ -40,10 +40,9 @@ const Logo = styled.div`
    justify-content: center;
    img {
       position: absolute;
-      top: 0;
-      left: -36px;
-      width: 24px;
-      height: 24px;
+      top: -3px;
+      left: -64px;
+      width: 64px;
    }
 `;
 
@@ -84,9 +83,13 @@ const DoneButton = styled(Button)`
    background: ${color.green};
    color: white;
    margin: 24px 0;
+
+   &:hover {
+      background: ${color.green1};
+   }
 `;
 
-function TitleScreen({props}) {
+function TitleScreen({next}) {
    const [stops, setStops] = React.useState([{id: 0, address: ""}]);
 
    const changeStop = id => e => {
@@ -113,7 +116,7 @@ function TitleScreen({props}) {
             <Logo>
                <img src={logo} alt="logo" />
                <Typography variant="h2" color="primary">
-                  TITLE
+                  RUTA
                </Typography>
             </Logo>
             <Typography variant="h6" color="secondary">
@@ -159,7 +162,7 @@ function TitleScreen({props}) {
                   shrink: true,
                }}
             />
-            <DoneButton>What's my fastest route!</DoneButton>
+            <DoneButton onClick={next}>What's my fastest route!</DoneButton>
          </Form>
       </Page>
    );
