@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/ruta/static/css/main.34de6062.chunk.css",
-    "main.js": "/ruta/static/js/main.77e0d18e.chunk.js",
-    "main.js.map": "/ruta/static/js/main.77e0d18e.chunk.js.map",
-    "runtime-main.js": "/ruta/static/js/runtime-main.7b1b345c.js",
-    "runtime-main.js.map": "/ruta/static/js/runtime-main.7b1b345c.js.map",
-    "static/css/2.00261875.chunk.css": "/ruta/static/css/2.00261875.chunk.css",
-    "static/js/2.26e6d032.chunk.js": "/ruta/static/js/2.26e6d032.chunk.js",
-    "static/js/2.26e6d032.chunk.js.map": "/ruta/static/js/2.26e6d032.chunk.js.map",
-    "index.html": "/ruta/index.html",
-    "precache-manifest.0d44234f93855256309a98527799f7eb.js": "/ruta/precache-manifest.0d44234f93855256309a98527799f7eb.js",
-    "service-worker.js": "/ruta/service-worker.js",
-    "static/css/2.00261875.chunk.css.map": "/ruta/static/css/2.00261875.chunk.css.map",
-    "static/css/main.34de6062.chunk.css.map": "/ruta/static/css/main.34de6062.chunk.css.map",
-    "static/media/RUTA.png": "/ruta/static/media/RUTA.291a401a.png",
-    "static/media/index.css": "/ruta/static/media/rubik-latin-900italic.5b173e43.woff"
+    "main.css": "/route-planner/static/css/main.34de6062.chunk.css",
+    "main.js": "/route-planner/static/js/main.dacdee84.chunk.js",
+    "main.js.map": "/route-planner/static/js/main.dacdee84.chunk.js.map",
+    "runtime-main.js": "/route-planner/static/js/runtime-main.8515a9eb.js",
+    "runtime-main.js.map": "/route-planner/static/js/runtime-main.8515a9eb.js.map",
+    "static/css/2.59f11d66.chunk.css": "/route-planner/static/css/2.59f11d66.chunk.css",
+    "static/js/2.32011244.chunk.js": "/route-planner/static/js/2.32011244.chunk.js",
+    "static/js/2.32011244.chunk.js.map": "/route-planner/static/js/2.32011244.chunk.js.map",
+    "index.html": "/route-planner/index.html",
+    "precache-manifest.6a0aa25a26ea028e9a8d4de0ad5c0d49.js": "/route-planner/precache-manifest.6a0aa25a26ea028e9a8d4de0ad5c0d49.js",
+    "service-worker.js": "/route-planner/service-worker.js",
+    "static/css/2.59f11d66.chunk.css.map": "/route-planner/static/css/2.59f11d66.chunk.css.map",
+    "static/css/main.34de6062.chunk.css.map": "/route-planner/static/css/main.34de6062.chunk.css.map",
+    "static/media/RUTA.png": "/route-planner/static/media/RUTA.291a401a.png",
+    "static/media/index.css": "/route-planner/static/media/rubik-latin-900italic.5b173e43.woff"
   },
   "entrypoints": [
-    "static/js/runtime-main.7b1b345c.js",
-    "static/css/2.00261875.chunk.css",
-    "static/js/2.26e6d032.chunk.js",
+    "static/js/runtime-main.8515a9eb.js",
+    "static/css/2.59f11d66.chunk.css",
+    "static/js/2.32011244.chunk.js",
     "static/css/main.34de6062.chunk.css",
-    "static/js/main.77e0d18e.chunk.js"
+    "static/js/main.dacdee84.chunk.js"
   ]
 }
