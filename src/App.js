@@ -40,7 +40,7 @@ function App() {
       <PosedTitleScreen key={0} next={nextScreen} />,
       <PosedMapScreen key={1} />,
    ];
-   console.log(screen);
+
    return (
       <ThemeProvider theme={theme}>
          <StylesProvider injectFirst>

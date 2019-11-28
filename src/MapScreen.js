@@ -84,5 +84,5 @@ function MapScreen({google}) {
 }
 
 export default GoogleApiWrapper({
-   apiKey: "", //ENV VAR
+   apiKey: `${process.env.REACT_APP_GOOGLE_API_KEY}`,
 })(MapScreen);
