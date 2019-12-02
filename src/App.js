@@ -32,13 +32,15 @@ const PosedMapScreen = withTransition(MapScreen);
 
 function App() {
    const [screen, setScreen] = React.useState(0);
-   const nextScreen = () => {
-      setScreen(screen + 1);
+   const [stops, setStops] = React.useState(null);
+   const submit = (info) => () => {
+      setStops(info);
+      setScreen(1);
    };
 
    const screens = [
-      <PosedTitleScreen key={0} next={nextScreen} />,
-      <PosedMapScreen key={1} />,
+      <PosedTitleScreen key={0} next={submit} />,
+      <PosedMapScreen key={1} stops={stops}/>,
    ];
 
    return (

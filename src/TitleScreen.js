@@ -89,8 +89,12 @@ const DoneButton = styled(Button)`
 `;
 
 function TitleScreen({next}) {
+   const [origin, setOrigin] = React.useState("");
+   const [destination, setDestination] = React.useState("");
    const [stops, setStops] = React.useState([{id: 0, address: ""}]);
 
+   const changeOrigin = e => setOrigin(e.target.value);
+   const changeDestination = e => setDestination(e.target.value);
    const changeStop = id => e => {
       setStops(
          stops.map(stop =>
@@ -100,9 +104,7 @@ function TitleScreen({next}) {
    };
 
    const addStop = () => {
-      const newId = stops[stops.length - 1].id + 1;
-      stops.push({id: newId, address: ""});
-      setStops([...stops]);
+      setStops([...stops, {id: stops[stops.length - 1].id + 1, address: ""}]);
    };
 
    const removeStop = id => () => {
@@ -126,7 +128,12 @@ function TitleScreen({next}) {
             <Typography variant="h6" color="primary">
                Where do you plan to go?
             </Typography>
-            <AddressField label="From" required color="secondary" />
+            <AddressField
+               label="From"
+               required
+               color="secondary"
+               onChange={changeOrigin}
+            />
             {stops.map(stop => (
                <Stop key={stop.id}>
                   <AddressField
@@ -143,7 +150,12 @@ function TitleScreen({next}) {
             <IconButton onClick={addStop}>
                <AddIcon fontSize="large" />
             </IconButton>
-            <AddressField label="To" required color="secondary" />
+            <AddressField
+               label="To"
+               required
+               color="secondary"
+               onChange={changeDestination}
+            />
 
             <Divider />
 
@@ -161,7 +173,14 @@ function TitleScreen({next}) {
                   shrink: true,
                }}
             />
-            <DoneButton onClick={next}>Show my fastest route!</DoneButton>
+            <DoneButton
+               onClick={next({
+                  origin: origin,
+                  destination: destination,
+                  waypoints: stops.map(stop => stop.address),
+               })}>
+               Show my fastest route!
+            </DoneButton>
          </Form>
       </Page>
    );
