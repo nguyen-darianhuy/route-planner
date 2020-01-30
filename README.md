@@ -25,7 +25,9 @@ This project was initially built for SLO Hacks Go 2019.
    - React Wrapper ([`google-maps-react`](https://www.npmjs.com/package/google-maps-react))
 
 # Credits
-Darian Nguyen - Developer
-Jasmine Till - Designer
-Diane Cho - Designer
-Timmy Chen - Technical Writer
+| Author | Role |
+| ------- | ---- |
+| Darian Nguyen | Developer |
+| Jasmine Till | Designer |
+| Diane Cho | Designer |
+| Timmy Chen | Technical Writer |
